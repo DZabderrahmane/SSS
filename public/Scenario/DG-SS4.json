@@ -1,0 +1,71 @@
+{
+  "elements": [
+    {
+      "group": "nodes",
+      "data": {
+        "id": "FS"
+      },
+      "position": {
+        "x": -84.73101262795959,
+        "y": 12.45466093060892
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "MF"
+      },
+      "position": {
+        "x": -83.66809652423836,
+        "y": 69.85234649917999
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "ANC"
+      },
+      "position": {
+        "x": 40.101138537311485,
+        "y": 41.14468310680396
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "FS_ANC",
+        "source": "FS",
+        "target": "ANC",
+        "relation": "EH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "MF_ANC",
+        "source": "MF",
+        "target": "ANC",
+        "relation": "EH"
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "MB"
+      },
+      "position": {
+        "x": 130.56982402438592,
+        "y": 38.87080748845888
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "ANC_MB",
+        "source": "ANC",
+        "target": "MB",
+        "relation": "FH"
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+/* FirstPage.css */
+.first-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+
+ .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; 
+    width: 100%;
+    background-color: #f9f9f9; /* Optional: light background */
+  }
+  
+  .carousel {
+    width: 70%; 
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* To ensure no overflow from image resizing */
+  }
+  
+  /* Image inside carousel */
+  .carousel img {
+    width: 100%;
+    height: 500px; /* Set a fixed height for the carousel image */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    display: block;
+  }
+  
+  /* Dots */
+  .carousel-dots {
+    position: absolute;
+    bottom: -1px; /* Adjusted closer to the image */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px; /* Reduced the gap between dots */
+  }
+  
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-dot:hover {
+    transform: scale(1.2);
+  }
+  
+  .carousel-dot.active {
+    background-color: #333;
+  }
+  
+  .image-title {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Button styles */
+.first-page-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .first-page-container li {
+    margin-top: 20px; /* Space between list items */
+    display: flex;
+    justify-content: center; /* Centering buttons horizontally */
+  }
+  
+  .first-p-btn {
+    padding: 12px 25px; /* Increase size with padding */
+    font-size: 18px; /* Make the font a little bigger */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    width: 200px; /* Fixed width for consistency */
+    display: inline-block; /* Ensure it behaves like a button */
+    transition: background-color 0.3s ease;
+  }
+  
+  .first-p-btn:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+  
+  .first-p-btn:focus {
+    outline: none; /* Remove default outline */
+  }
+  
+  .clear-selections {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .clear-selections button {
+    padding: 8px 16px;
+    background-color: #7e7c7c;
+    color: rgb(252, 251, 251);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .clear-selections button:hover {
+    background-color: #d32f2f;
+  }

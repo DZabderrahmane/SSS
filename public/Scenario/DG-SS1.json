@@ -1,0 +1,99 @@
+{
+  "elements": [
+    {
+      "group": "nodes",
+      "data": {
+        "id": "DV"
+      },
+      "position": {
+        "x": -55.862804094443746,
+        "y": 20.062199010677055
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "DP"
+      },
+      "position": {
+        "x": 0.07681251612208406,
+        "y": 20.4235469467101
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Ic"
+      },
+      "position": {
+        "x": 85.2293604036372,
+        "y": 12.034529835787698
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Ex"
+      },
+      "position": {
+        "x": 165.22417919878362,
+        "y": 76.28683200154788
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Dg"
+      },
+      "position": {
+        "x": 246.07855971900494,
+        "y": 78.2442204120305
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DV_DP",
+        "source": "DV",
+        "target": "DP",
+        "relation": "Ft"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DP_Ic",
+        "source": "DP",
+        "target": "Ic",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "Ic_Ex",
+        "source": "Ic",
+        "target": "Ex",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DP_Ex",
+        "source": "DP",
+        "target": "Ex",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "Ex_Dg",
+        "source": "Ex",
+        "target": "Dg",
+        "relation": "Pj"
+      }
+    }
+  ]
+}

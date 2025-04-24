@@ -1,0 +1,118 @@
+{
+  "elements": [
+    {
+      "group": "nodes",
+      "data": {
+        "id": "DN"
+      },
+      "position": {
+        "x": -108.17145928458352,
+        "y": 14.212966782401422
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "FC"
+      },
+      "position": {
+        "x": -20.147990845552567,
+        "y": 15.30041819337703
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DN_FC",
+        "source": "DN",
+        "target": "FC",
+        "relation": "MN"
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "DP"
+      },
+      "position": {
+        "x": 79.48236284146992,
+        "y": 11.018604566511865
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "FC_DP",
+        "source": "FC",
+        "target": "DP",
+        "relation": "Ft"
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Ic"
+      },
+      "position": {
+        "x": 190.12488057081882,
+        "y": 14.833291750684003
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Ex"
+      },
+      "position": {
+        "x": 257.1113072878761,
+        "y": 74.85563247618974
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "Dg"
+      },
+      "position": {
+        "x": 329.3448883681128,
+        "y": 73.19884391443658
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DP_Ic",
+        "source": "DP",
+        "target": "Ic",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "DP_Ex",
+        "source": "DP",
+        "target": "Ex",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "Ic_Ex",
+        "source": "Ic",
+        "target": "Ex",
+        "relation": "FH"
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "Ex_Dg",
+        "source": "Ex",
+        "target": "Dg",
+        "relation": "Pj"
+      }
+    }
+  ]
+}

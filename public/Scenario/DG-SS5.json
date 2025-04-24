@@ -1,0 +1,33 @@
+{
+  "elements": [
+    {
+      "group": "nodes",
+      "data": {
+        "id": "TO"
+      },
+      "position": {
+        "x": -10.226161940770517,
+        "y": 21.801171111482258
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "GV"
+      },
+      "position": {
+        "x": 67.63027010608127,
+        "y": 21.782774107457833
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "id": "TO_GV",
+        "source": "TO",
+        "target": "GV",
+        "relation": "MP"
+      }
+    }
+  ]
+}

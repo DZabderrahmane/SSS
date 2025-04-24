@@ -1,5 +1,3 @@
-// server.js
-require('dotenv').config();          // ← Load .env variables
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -12,15 +10,15 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// ✅ Connect to MongoDB using ENV var
+// ✅ Connect to MongoDB
 mongoose.connect(
-  process.env.MONGODB_URI,
+  "mongodb+srv://abdegam20:abdeabde2016@cluster0.s8lf6.mongodb.net/pfe_datasat?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }
 )
-.then(() => console.log("✅ Connected to MongoDB"))
+.then(() => console.log("✅ Connected to pfe_datasat"))
 .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 // ✅ Define schema and model
@@ -40,8 +38,12 @@ require("fs").existsSync(uploadsDir) || require("fs").mkdirSync(uploadsDir, { re
 
 // ✅ Configure Multer
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, uploadsDir),
-  filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`)
+  destination: function (req, file, cb) {
+    cb(null, uploadsDir);
+  },
+  filename: function (req, file, cb) {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
 });
 const upload = multer({ storage });
 
@@ -49,10 +51,14 @@ const upload = multer({ storage });
 app.post("/api/save-scenario", upload.single("attachment"), async (req, res) => {
   const { name } = req.body;
   const file = req.file;
-  if (!name || !file) return res.status(400).send("Missing scenario name or file attachment");
+
+  if (!name || !file) {
+    return res.status(400).send("Missing scenario name or file attachment");
+  }
 
   try {
     const fileData = await fs.readFile(file.path);
+
     await Scenario.create({
       name,
       attachment: {
@@ -61,6 +67,7 @@ app.post("/api/save-scenario", upload.single("attachment"), async (req, res) => 
         fileName: file.originalname
       }
     });
+
     console.log("✅ Scenario saved:", name);
     res.sendStatus(200);
   } catch (err) {
